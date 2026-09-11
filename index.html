@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Abla</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #16181c; } }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; border-bottom: 1px solid #8883; padding-bottom: .3rem; }
+  .meta { color: #7a7a7a; font-size: .92rem; margin-bottom: 2rem; }
+  .clave { background: #f4f6f8; border-left: 4px solid #FF4B1A; padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; }
+  @media (prefers-color-scheme: dark) { .clave { background: #21242a; } }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid #8883; vertical-align: top; }
+  th { font-weight: 600; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  code { background: #8882; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3.5rem; color: #7a7a7a; font-size: .9rem; border-top: 1px solid #8883; padding-top: 1rem; }
+  a { color: #C4380E; }
+  @media (prefers-color-scheme: dark) { a { color: #FF8A5E; } }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidad de Abla</h1>
+<p class="meta">
+  <strong>Responsable:</strong> FieldRisk S.A.S.<br>
+  <strong>Contacto:</strong> <a href="mailto:gmaffiold@gmail.com">gmaffiold@gmail.com</a><br>
+  <strong>Última actualización:</strong> 10 de septiembre de 2026
+</p>
+
+<div class="clave">
+<p><strong>Abla funciona sin internet.</strong> La aplicación no puede conectarse a ningún
+servidor: no declara el permiso de red y eso se puede comprobar en su manifiesto.</p>
+<p><strong>No recogemos ningún dato.</strong> No hay servidores, no hay cuentas, no hay
+analítica, no hay publicidad y no hay terceros. Nada de lo que escribas o guardes en Abla
+llega nunca a FieldRisk S.A.S. ni a nadie más que a la persona a la que le escribes.</p>
+<p>Tus mensajes viajan <strong>cifrados de extremo a extremo</strong> saltando de teléfono
+en teléfono por Bluetooth. Los teléfonos que los transportan por el camino
+<strong>no pueden leerlos</strong>.</p>
+<p>Todo lo que la aplicación guarda vive <strong>solo en tu teléfono</strong>, cifrado, y
+desaparece al desinstalarla.</p>
+</div>
+
+<h2>1. Qué datos se guardan y dónde</h2>
+<p>Todo lo siguiente se almacena <strong>únicamente en tu dispositivo</strong>, dentro del
+almacenamiento privado de la aplicación, y cifrado:</p>
+<table>
+  <tr><th>Qué</th><th>Para qué</th><th>Se borra cuando</th></tr>
+  <tr><td>Tu nombre</td><td>Que tus contactos sepan quién les escribe</td><td>Desinstalas la app</td></tr>
+  <tr><td>Tus claves criptográficas</td><td>Firmar y descifrar tus mensajes</td><td>Desinstalas la app</td></tr>
+  <tr><td>Tus contactos</td><td>La lista de personas que tú añadiste</td><td>Los eliminas, o desinstalas</td></tr>
+  <tr><td>Tus conversaciones</td><td>Leer lo que te han escrito</td><td>Vacías el chat, o desinstalas</td></tr>
+  <tr><td>Mensajes de otras personas en tránsito</td><td>Transportarlos hasta su destinatario</td><td>A las 24 horas, automáticamente</td></tr>
+</table>
+<p>La base de datos está cifrada con SQLCipher. Las claves privadas se guardan en un
+almacén cifrado respaldado por el hardware seguro del teléfono cuando el dispositivo lo
+permite.</p>
+<p><strong>Al registrarte solo se te pide un nombre.</strong> No pedimos número de teléfono,
+ni correo, ni fecha de nacimiento, ni ningún otro dato personal. No hay que crear una
+cuenta porque no existe ningún servicio en el que registrarse.</p>
+
+<h2>2. Qué sale de tu teléfono, y hacia dónde</h2>
+<p>Solo dos cosas salen, y ninguna va a internet:</p>
+<ul>
+  <li><strong>Tus mensajes</strong>, cifrados de extremo a extremo, por Bluetooth, hacia los
+  teléfonos cercanos que los transportan hasta su destinatario. Únicamente la persona a la
+  que escribes puede descifrarlos: quien los transporta ve un bloque ilegible.</li>
+  <li><strong>Tu nombre y tus claves públicas</strong>, por Bluetooth, y solo hacia dos
+  clases de personas: quienes ya son tus contactos, y quienes estén cerca <em>mientras tú
+  actives la opción de ser visible</em>, que se apaga sola a los diez minutos. Un
+  desconocido que simplemente pase a tu lado no recibe tu identidad.</li>
+</ul>
+<p>Nada más. La aplicación <strong>no puede</strong> enviar información a FieldRisk S.A.S.
+ni a ningún otro destino de internet, porque carece de la capacidad técnica para hacerlo.</p>
+
+<h2>3. Qué NO hacemos</h2>
+<ul>
+  <li><strong>No usamos tu ubicación.</strong> Abla no lee el GPS en ningún caso. La
+  pantalla de «nodos cerca» estima distancia por la potencia de la señal Bluetooth, no por
+  posición geográfica, y no sabe hacia dónde está nadie.</li>
+  <li><strong>No hay analítica, telemetría ni informes de fallos automáticos.</strong></li>
+  <li><strong>No hay publicidad</strong> ni ninguna forma de seguimiento publicitario.</li>
+  <li><strong>No hay terceros.</strong> La aplicación no incorpora ningún SDK que envíe
+  datos a nadie.</li>
+  <li><strong>No vendemos ni compartimos datos</strong>, entre otras cosas porque no
+  llegamos a tenerlos.</li>
+  <li><strong>No guardamos un registro de con quién te has cruzado.</strong> El
+  identificador que tu teléfono emite por Bluetooth cambia solo cada pocos minutos,
+  precisamente para que nadie —ni siquiera nosotros— pueda seguirte por la calle.</li>
+</ul>
+
+<h2>4. Permisos que pide la aplicación, y por qué</h2>
+<ul>
+  <li><strong>Bluetooth (buscar, anunciar, conectar).</strong> Es el medio por el que viajan
+  los mensajes. Sin esto la aplicación no tiene ninguna función.</li>
+  <li><strong>Ubicación, solo en Android 12 y anteriores.</strong> Android exigía este
+  permiso para poder buscar dispositivos Bluetooth, aunque no se quisiera saber dónde está
+  el teléfono. <strong>Abla nunca lee la ubicación</strong>; el permiso está limitado por el
+  sistema a esas versiones antiguas y desaparece en Android 13 y posteriores.</li>
+  <li><strong>Cámara.</strong> Únicamente para leer el código QR de otra persona al añadirla
+  como contacto. No se guardan fotos ni se procesa ninguna imagen más allá de ese código, y
+  el permiso solo se pide al abrir el escáner.</li>
+  <li><strong>Notificaciones.</strong> Para avisarte cuando te llega un mensaje o cuando
+  alguien quiere añadirte.</li>
+  <li><strong>Servicio en primer plano y arranque.</strong> Para seguir recibiendo mensajes
+  con la pantalla apagada, con una notificación permanente que te informa de ello.</li>
+</ul>
+
+<h2>5. El registro de diagnóstico</h2>
+<p>Abla incluye un registro técnico que ayuda a entender fallos. <strong>Está desactivado
+por defecto</strong> y solo se activa si tú lo enciendes en Ajustes.</p>
+<p>Mientras está activo anota con qué dispositivos se ha cruzado el teléfono, con qué alias
+y a qué hora. Se guarda solo en tu teléfono, en el almacenamiento privado de la aplicación,
+y <strong>se borra al desactivarlo</strong>.</p>
+<p>Ese registro no se envía a ningún sitio de forma automática. Si decides compartirlo, lo
+haces tú a mano desde Ajustes, eligiendo tú mismo la aplicación y el destinatario.</p>
+
+<h2>6. Copias de seguridad</h2>
+<p>Puedes exportar tu identidad y tus contactos a un archivo, protegido con una contraseña
+que eliges tú. Ese archivo lo guardas donde quieras y <strong>nosotros no tenemos ninguna
+copia ni forma de recuperarlo</strong>: si olvidas la contraseña, el archivo no se puede
+abrir.</p>
+<p>Las copias de seguridad automáticas de Android están <strong>desactivadas</strong> en
+esta aplicación, para que tus claves y tus mensajes no acaben en la nube de nadie.</p>
+
+<h2>7. Menores</h2>
+<p>Abla no está dirigida a menores de 13 años y no recoge datos de ninguna persona,
+incluidos los menores.</p>
+
+<h2>8. Tus derechos</h2>
+<p>Como no recogemos ningún dato personal, no hay nada que podamos entregarte, rectificar o
+borrar a petición tuya: todo está en tu teléfono y bajo tu control directo.</p>
+<ul>
+  <li><strong>Acceder a tus datos:</strong> están en la aplicación; puedes exportarlos desde
+  Ajustes.</li>
+  <li><strong>Borrarlos:</strong> elimina contactos y conversaciones desde la aplicación, o
+  desinstálala para borrarlo todo.</li>
+</ul>
+<p>Si tienes cualquier duda sobre esta política, escribe a
+<a href="mailto:gmaffiold@gmail.com">gmaffiold@gmail.com</a>.</p>
+
+<h2>9. Cambios en esta política</h2>
+<p>Si en el futuro Abla cambiara de forma que afecte a esta política, publicaríamos aquí la
+versión nueva con su fecha, y lo avisaríamos dentro de la aplicación antes de que el cambio
+entre en vigor.</p>
+
+<footer>
+Abla es una aplicación de mensajería para emergencias y apagones, desarrollada por
+FieldRisk S.A.S.
+</footer>
+
+</body>
+</html>
